@@ -38,7 +38,7 @@
 Перед вызовом функции *triangulate* отсортировываем точки по координатам и удаляем "наложившиеся" точки, т.е. те, 
 у которых совпали обе координаты:
 ```
-points: Points = ...
+points: List[Point] = ...
 points.sort(key=lambda point: (point.x, point.y))
 
 points_unique = [points[0]]
